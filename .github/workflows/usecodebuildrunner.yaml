@@ -10,3 +10,4 @@ jobs:
     runs-on: codebuild-testing-cb-project-${{ github.run_id }}-${{ github.run_attempt }}-arm-3.0-small
     steps:
       - run: echo "Hello World!"
+      - run: echo ${{env.TEST}}
