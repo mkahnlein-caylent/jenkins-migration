@@ -7,9 +7,8 @@ jobs:
   nest:
     name: Test
     environment: Development
-    runs-on: codebuild-testing-cb-project-${{ github.run_id }}-${{ github.run_attempt }}-arm-3.0-small
+    runs-on: codebuild-mkahnlein-testing-cb-project-${{ github.run_id }}-${{ github.run_attempt }}-arm-3.0-small
     steps:
-      - run: echo "Hello World!"
-      - run: echo $TEST
-      - run: echo $SOME_KEY1
+      - run: echo $db_user
+      - run: echo $vpc_id
 
